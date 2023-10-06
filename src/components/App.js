@@ -1,6 +1,7 @@
 import React from "react";
 import LocationDetails from "./LocationDetails";
 import ForecastSummaries from "./ForecastSummaries";
+import ForecastDetails from "./ForecastDetails";
 import "../styles/App.css";
 
 function App({ location, forecasts }) {
@@ -9,6 +10,7 @@ function App({ location, forecasts }) {
     <div className="weather-app">
       <LocationDetails city={city} country={country} />
       <ForecastSummaries forecasts={forecasts} />
+      <ForecastDetails forecasts={forecasts} />
     </div>
   );
 }
